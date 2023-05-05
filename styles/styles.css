@@ -26,7 +26,7 @@ aside h2 {
 }
 
 aside img {
-    float: center;
+    float: inline-start;
     width: 200px;
     height: auto;
 }
