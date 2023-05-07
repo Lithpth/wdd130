@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap);
+
+:root {
+    --primary-color: #007FFF;
+    --secondary-color: #ff3700ee;
+    --accent1-color: #F7D842;
+    --accent2-color: #F76F8E;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+
+    --nav-background-color: #FFFFFF;
+    --nav-link-color: #333333;
+    --nav-hover-link-color: #F7D842;
+    --nav-hover-background-color: #333333;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--secondary-color);
+    text-align: justify;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.hero article .article-img {
+    size: auto;
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+.hero article p {
+    font-size: 1.0rem;
+    color: #ffffff;
+    text-align: justify;
+}
+
+/* No decorate link */
+.sociallinks {
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    max-width: 12000px;
+    margin: 0 auto;
+}
