@@ -48,6 +48,8 @@ a:active {
     display: block;
     width: 100%;
     height: auto;
+    border-bottom: 1px solid #000;
+    border-bottom-style: inset;
 
 }
 
@@ -63,10 +65,10 @@ a:active {
 
 .hero article {
     position: absolute;
-    top: 90%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%; 
+    width: 75%;
     padding: 20px;
     opacity: 0.9;
 }
@@ -82,13 +84,115 @@ a:active {
     text-align: justify;
 }
 
-/* No decorate link */
-.sociallinks {
-    text-decoration: none;
+/* HISTORY */
+.history {
+    text-align: center;
+    border-top: 2px #333 outset;
+    border-bottom: 2px #333 inset;
 }
+
+.history h2 {
+    font-size: 3rem;
+    margin-top: 50px;
+}
+
+.history-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.history-content .left {
+    flex: 1;
+    text-align: center;
+}
+
+
+.history-content .middle img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+.history-content .right {
+    flex: 1;
+    text-align: center;
+}
+
+.history-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 50px;
+}
+
 
 /* Container */
 .container {
     max-width: 12000px;
     margin: 0 auto;
+}
+
+/* footer */
+footer {
+    display: flex;
+    border-top: 2px #000 inset;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.sociallinks {
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sociallinks img {
+    height: 25px;
+    margin-left: 10px;
+}
+
+/* HEADER */
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    border-bottom-style: outset;
+
+}
+
+header img {
+    margin: 20px;
+    height: 3rem;
+
+}
+
+nav {
+    text-align: right;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+    flex: 1 1 100%;
+}
+
+.navigation a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: var(--nav-background-color) 0.2s ease-in-out;
+}
+
+.navigation a:hover {
+    background-color: #f1f1f1;
 }
