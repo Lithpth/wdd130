@@ -193,7 +193,7 @@ nav {
     color: #333;
     font-weight: bold;
     border-radius: 4px;
-    transition: #fff 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .navigation a:hover {
