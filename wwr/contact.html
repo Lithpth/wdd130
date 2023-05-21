@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Contact | Daft Rafts</title>
+    <meta name="description" content="message, rafting, contact, html, details.">
+    <meta name="author" content="Alec Nugent">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="1">
+        <nav>
+            <ul class="navigation">
+                <li><a href="wwr/">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="info">
+            <h2>Daft Raft's Information</h2>
+            <p>
+                Address: 1337 Amongus Ave, CA, 12345<br>
+                Phone: 123-456-7890<br>
+                Email: susimposteramongus@proton.me
+            </p>
+            <div>
+                <!-- Map goes here -->
+            </div>
+
+        </section>
+        <section class="employees">
+            <h2>Our Employees</h2>
+            <!-- Yes these are "Happy Looking" -->
+            <div class="employee-image">
+                <img src="images/employee1.png" alt="Employee 1">
+                <p>Employee 1 - Purple</p>
+            </div>
+            <div class="employee-image">
+                <img src="images/employee2.png" alt="Employee 2">
+                <p>Employee 2 - Red</p>
+            </div>
+            <div class="employee-image">
+                <img src="images/employee3.png" alt="Employee 3">
+                <p>Employee 3 - Yellow</p>
+            </div>
+        </section>
+        <section>
+            <h2>Contact Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Contact information</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Input</legend>
+                    <label for="purpose">Purpose of Message:</label><br>
+                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+                    <label for="inquiry">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
+                    <label for="suggestion">Website Suggestion</label><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" required></textarea><br>
+
+                    <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+                </fieldset>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Adventure Awaits you!</h2>
+            <img src="images/logo.png" alt="01">
+            <img src="images/logo.png" alt="02">
+            <img src="images/logo.png" alt="03">
+            <img src="images/logo.png" alt="04">
+            <img src="images/logo.png" alt="05">
+        </section>
+    </main>
+    <footer>
+        <p>
+            ©️2023 ඞ Daft Rafts ඞ Alec Nugent ඞ WDD 130
+        </p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+
+    </footer>
+</body>
+
+</html>

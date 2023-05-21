@@ -199,3 +199,83 @@ nav {
 .navigation a:hover {
     background-color: #f1f1f1;
 }
+
+/* contact */
+
+.info p {
+    text-align: center;
+}
+
+/* employee */
+
+.employees {
+    text-align: center;
+    max-width: 100%;
+}
+
+.employee-image {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.employee-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.employee-image p {
+    margin: 0;
+    font-weight: bold;
+}
+/* form */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    text-align: right;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+fieldset {
+    display: block;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.1em;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 0.5rem;
+    margin-bottom: 16px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+}
+input {
+    padding: 1rem;
+}
+
+button {
+    margin: .5rem auto;
+    width: 100%;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
