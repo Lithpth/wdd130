@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | Development Standards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="WDD%20130%20Development%20Standards_files/css2.css" rel="stylesheet">
+  <link rel="stylesheet" href="WDD%20130%20Development%20Standards_files/course.css">
+  <link rel="stylesheet" href="WDD%20130%20Development%20Standards_files/ir-black.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 130<span id="coursetitle">: Web Fundamentals</span></h1>
+      <img src="WDD%20130%20Development%20Standards_files/byui-logo.svg" alt="BYU-I logo" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span class="active"><a href="https://byui-cse.github.io/wdd130-ww-course">Home</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week01">W1</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week02">W2</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week03">W3</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week04">W4</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week05">W5</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week06">W6</a></span>
+      <span><a href="https://byui-cse.github.io/wdd130-ww-course/week07">W7</a></span>
+      <span><a href="https://byui.instructure.com/calendar" target="_blank">I-Learn</a></span>
+    </nav>
+    <h2>📑 Web Development Standards Checklist</h2>
+
+    <h3>Overview</h3>
+    <p>Requiring a web frontend development standards checklist helps achieve
+      the learning outcomes by providing focused feedback and a disciplined approach. Some line
+      items in the checklist may be opinionated and are dependent, however, being held to an
+      organization's specific baseline standards is common in the industry. </p>
+    <div class="callout info">
+      These development standards are modeled, in part, after <a href="https://frontendchecklist.io/" target="_blank">The Front-End Checklist</a> by David
+      Dias.<br>Most of
+      the supplemental references point to <a href="https://developer.mozilla.org/en-US/" target="_blank">MDN</a>
+      Web Docs sources.
+    </div>
+    <h3>Standards Checklist</h3>
+    <ul class="check">
+      <li>All folders and files follow the <a href="https://byui-cse.github.io/wdd130-ww-course/week01/prepare-naming-conventions.html" target="_blank">course naming rules/conventions</a> which include lowercase only, no
+        spaces, and are meaningful, i.e., semantic.</li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype" target="_blank">The
+          Document Type declaration</a>
+        <pre><code class="html hljs language-xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span></code></pre>
+      </li>
+      <li><a href="https://www.tpgi.com/using-the-html-lang-attribute" target="_blank" rel="noopener">HTML element lang attribute</a>
+        <pre><code class="html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en-US"</span>&gt;</span></code></pre>
+      </li>
+    </ul>
+    <h4>Head</h4>
+    <ul class="check">
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta" target="_blank" rel="noopener">Meta Charset Attribute</a>
+        <pre><code class="html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"utf-8"</span>&gt;</span></code></pre>
+      </li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag" target="_blank" rel="noopener">Meta Viewport Element</a>
+        <pre><code class="html hljs language-xml"><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span>&gt;</span></code></pre>
+      </li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title" target="_blank" rel="noopener">Title Element</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description" target="_blank" rel="noopener">Meta Description Element</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_an_author_and_description" target="_blank" rel="noopener">Meta Author Element</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link" target="_blank" rel="noopener">Eternal CSS file references</a> are used and in the proper order.</li>
+    </ul>
+    <h4>HTML</h4>
+    <ul class="check">
+      <li>HTML is W3C compliant and valid. <a href="https://validator.w3.org/" target="_blank" rel="noopener">W3C validator</a></li>
+      <li><a href="https://htmlreference.io/" target="_blank" rel="noopener">Semantic Elements</a>
+        are used. <a href="https://dev.to/eevajonnapanula/ode-to-semantic-html-38c3" target="_blank" rel="noopener">Why? is this important</a></li>
+      <li>No broken links are found on the page. <a href="https://validator.w3.org/checklink" target="_blank" rel="noopener">W3C Link Checker</a></li>
+    </ul>
+
+    <h4>CSS</h4>
+    <ul class="check">
+      <li>CSS is W3C compliant and valid. <a href="https://jigsaw.w3.org/css-validator/" target="_blank" rel="noopener">W3C validator</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors" target="_blank" rel="noopener">Unique ID
+          selectors</a> - If an ID selector is used, it is unique to a page. The planned use of <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors" target="_blank" rel="noopener">class selector</a> is preferred.</li>
+    </ul>
+    <hr>
+    <h4>Accessibility and Best Practice</h4>
+    <ul class="check">
+      <li>Images are <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML">optimized</a>
+        to fit the design needs of the site.</li>
+      <li>Image <a href="https://developers.google.com/web/tools/lighthouse/audits/aspect-ratio">aspect
+          ratios</a> are not changed for any images.</li>
+      <li>Every image has an <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">alt
+          attribute</a> assigned and it is relevant in describing the non-decorative image.</li>
+      <li>Only one <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank" rel="noopener">heading</a> &lt;h1&gt; is used on a single page.</li>
+      <li><a href="https://dequeuniversity.com/rules/axe/4.4/heading-order?utm_source=lighthouse&amp;utm_medium=devtools" target="
+        ">Heading</a> tags <code>&lt;h1&gt; - &lt;h6&gt;</code> are used in the proper order to
+        outline the page. Properly ordered headings do not skip levels and convey the semantic
+        structure of the page, making it easier to navigate and understand when using assistive
+        technologies.</li>
+      <li>No <a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#Color_and_color_contrast">color
+          contrast</a> violations at the AA level. Use DevTools CSS Overview to test: 🎦 <a href="https://video.byui.edu/media/t/1_amt1b8xy">How to Use CSS Overview</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" target="_blank">Accessibility</a>
+        test
+        errors and warnings are reviewed</li>
+      <li>The page weight does not exceed 500KB as measured by the DevTools Network load.</li>
+    </ul>
+    <h3>Submission</h3>
+    <p>Bookmark this page in your browser for 📑reference throughout the course.</p>
+
+
+  </main>
+  <footer>
+    <p>Copyright © Brigham Young University-Idaho | All rights reserved</p>
+  </footer>
+  <script src="WDD%20130%20Development%20Standards_files/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="WDD%20130%20Development%20Standards_files/preventCodeSelect.js"></script>
+
+
+</body></html>
